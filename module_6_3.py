@@ -16,7 +16,8 @@ class Pegasus(Horse, Eagle):  #класс описывающий пегаса. �
         super().run(dx)
         super().fly(dy)
     def get_pos(self):
-        return super().x_distance, super().y_distance
+        return self.x_distance, self.y_distance
+        # return super().x_distance, super().y_distance
         # print(super().x_distance, super().y_distance)
     def voice(self):
         print(Eagle.sound)
